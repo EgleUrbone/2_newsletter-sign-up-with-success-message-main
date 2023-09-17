@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
@@ -18,28 +20,30 @@
   <div id="formContainer">
     <img src="/assets/images/illustration-sign-up-mobile.svg" alt="">
     <!-- Sign-up form start -->
-    <h1> Stay updated!</h1>
+    <div class="innerCont">
+      <h1 class="mainHeader"> Stay updated!</h1>
 
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
 
-    <ul>
-      <li><img src="/assets/images/icon-list.svg" alt="">
-        <p>Product discovery and building what matters</p>
-      </li>
-      <li><img src="/assets/images/icon-list.svg" alt="">
-        <p>Measuring to ensure updates are a success</p>
-      </li>
-      <li><img src="/assets/images/icon-list.svg" alt="">
-        <p>And much more!</p>
-      </li>
-    </ul>
+      <ul class="unlisted">
+        <li class="listItem"><img src="/assets/images/icon-list.svg" alt="">
+          <p class="listText">Product discovery and building what matters</p>
+        </li>
+        <li class="listItem"><img src="/assets/images/icon-list.svg" alt="">
+          <p class="listText">Measuring to ensure updates are a success</p>
+        </li>
+        <li class="listItem"><img src="/assets/images/icon-list.svg" alt="">
+          <p class="listText">And much more!</p>
+        </li>
+      </ul>
 
-    <form id="emailForm">
-      <label for="email">Email address</label>
-      <input id="email" type="email" placeholder="email@company.com">
-      <button type="submit" id="submit">Subscribe to monthly newsletter</button>
-      <div id="errorContainer"></div>
-    </form>
+      <form id="emailForm" class="emailForm">
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="email@company.com">
+        <button type="submit" id="submit">Subscribe to monthly newsletter</button>
+        <div id="errorContainer"></div>
+      </form>
+    </div>
   </div>
   <!-- Sign-up form end -->
 
