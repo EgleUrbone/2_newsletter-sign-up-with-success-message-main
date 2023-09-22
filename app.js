@@ -6,7 +6,8 @@ const els = {
   form: document.forms.emailForm,
   email: document.getElementById('email'),
   errorContainer: document.getElementById('errorContainer'),
-  output: document.getElementById('output')
+  output: document.getElementById('output'),
+  dismiss: document.getElementById('dismissButton'),
 }
 console.log('els ===', els);
 
@@ -40,6 +41,8 @@ function showError(msg) {
   els.errorContainer.innerHTML = `<h2 class='error'>${msg}</h2>`
 }
 
+
+
 function hideFormContainer() {
   els.container.style.display = 'none'
 }
@@ -49,12 +52,24 @@ function showSuccess(valueObj) {
   divEl.classList.add('success');
   console.log('divEl ===', divEl);
   divEl.innerHTML = `
-  <h2>Thanks for subscribing!</h2>
-  <p>A confirmation email has been sent to ${valueObj.email}.
+  <div>
+  <img class="successIcon" src="/assets/images/icon-list.svg" alt="icon">
+  <h2 class="mainHeader">Thanks for subscribing!</h2>
+  <p class="successText">A confirmation email has been sent to <span class="successEmail">${valueObj.email}</span>.
     Please open it and click the button inside to confirm your subscription.
   </p>
-  <button> Dismiss message</button>
+  </div>
   `;
+  const successBtn = document.createElement('button')
+  successBtn.textContent = 'Dismiss message'
+  successBtn.classList.add('btn');
+  successBtn.classList.add('successBtn');
+  divEl.append(successBtn);
+  successBtn.addEventListener('click', () => {
+    els.output.style.display = 'none';
+    els.container.style.display = 'block'
+  })
   els.output.append(divEl);
   hideFormContainer();
 }
+
