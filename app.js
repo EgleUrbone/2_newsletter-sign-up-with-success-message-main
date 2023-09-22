@@ -69,7 +69,7 @@ function showSuccess(valueObj) {
   divEl.append(successBtn);
   successBtn.addEventListener('click', () => {
     els.output.style.display = 'none';
-    els.container.style.display = 'block'
+    els.container.style.display = 'flex'
   })
   els.output.append(divEl);
   hideFormContainer();
