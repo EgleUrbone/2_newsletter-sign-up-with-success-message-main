@@ -163,5 +163,26 @@ html {
     width: 505px;
     background-color: var(--white);
     border-radius: 30px;
+    padding: 50px 65px;
   }
+
+  .successIcon {
+    margin-top: 0;
+  }
+
+  .desktopSuccessHeader {
+    margin-top: 40px;
+    font-size: 55px;
+  }
+
+  .successText {
+    margin-bottom: 40px;
+  }
+
+  .successBtn {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  
 }

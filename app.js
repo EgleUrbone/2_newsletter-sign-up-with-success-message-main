@@ -54,7 +54,7 @@ function showSuccess(valueObj) {
   divEl.innerHTML = `
   <div>
   <img class="successIcon" src="/assets/images/icon-list.svg" alt="icon">
-  <h2 class="mainHeader">Thanks for subscribing!</h2>
+  <h2 class="mainHeader desktopSuccessHeader">Thanks for subscribing!</h2>
   <p class="successText">A confirmation email has been sent to <span class="successEmail">${valueObj.email}</span>.
     Please open it and click the button inside to confirm your subscription.
   </p>
