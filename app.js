@@ -39,6 +39,8 @@ els.form.addEventListener('submit', (e) => {
 
 function showError(msg) {
   els.errorContainer.innerHTML = `<h2 class='error'>${msg}</h2>`
+  els.email.classList.add('errorInput')
+  els.email.style.border = '2px solid tomato'
 }
 
 

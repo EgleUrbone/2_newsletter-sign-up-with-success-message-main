@@ -39,10 +39,12 @@
       </ul>
 
       <form id="emailForm" class="emailForm">
-        <label for="email" class="emailLabel">Email address</label>
+        <div class="emailAndError">
+          <label for="email" class="emailLabel">Email address</label>
+          <div id="errorContainer"></div>
+        </div>
         <input class="emailInput" id="email" type="email" placeholder="email@company.com">
         <button class="btn" type="submit" id="submit">Subscribe to monthly newsletter</button>
-        <div id="errorContainer"></div>
       </form>
     </div>
     <img class="desktopImg" src="/assets/images/illustration-sign-up-desktop.svg" alt="image">

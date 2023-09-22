@@ -65,10 +65,30 @@ html {
   flex-direction: column;
 }
 
+.emailAndError {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .emailLabel {
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 10px;
+}
+
+.error {
+  font-size: 14px;
+  color: var(--primary);
+  margin: 0;
+}
+
+.errorInput {
+  background-color: hsla(4, 100%, 67%, 0.289);
+  color: var(--primary); 
+}
+
+.errorInput::placeholder {
+  color: var(--primary);
 }
 
 .emailInput {
