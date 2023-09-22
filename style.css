@@ -84,7 +84,7 @@ html {
 
 .errorInput {
   background-color: hsla(4, 100%, 67%, 0.289);
-  color: var(--primary); 
+  color: var(--primary);
 }
 
 .errorInput::placeholder {
@@ -92,6 +92,7 @@ html {
 }
 
 .emailInput {
+  cursor: pointer;
   padding: 18px;
   border-radius: 10px;
   border: 1px solid var(--grey);
@@ -111,6 +112,14 @@ html {
   letter-spacing: 0.5px;
   margin-bottom: 40px;
   width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, #ff5a64, #ff9f51);
+  padding: 19px;
+  border: transparent;
+  box-shadow: 0px 10px 30px rgba(255, 99, 71, 0.449);
 }
 
 .success {
@@ -130,6 +139,13 @@ html {
 
 .successBtn {
   margin-top: 235px;
+}
+
+.successBtn:hover {
+  background-image: linear-gradient(to right, #ff5a64, #ff9f51);
+  padding: 19px;
+  border: transparent;
+  box-shadow: 0px 10px 30px rgba(255, 99, 71, 0.449);
 }
 
 @media screen and (min-width: 1440px) {
@@ -203,6 +219,4 @@ html {
     margin-top: 0;
     margin-bottom: 0;
   }
-
-  
 }
